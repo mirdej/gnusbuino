@@ -2,7 +2,7 @@
 #include <avr/wdt.h>
 #include "midignusb.h"
 #include "usbdrv.h"
-#include "../../../../libraries/MIDI/MIDI.h"	// not very clean, I know
+#include "../../../../libraries/GnusbuinoMIDI/GnusbuinoMIDI.h"	// not very clean, I know
 
 
 
