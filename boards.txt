@@ -1,42 +1,61 @@
 ##############################################################
 
-gnusbuino.name=Gnusbuino
-gnusbuino.upload.protocol=usbasp
-gnusbuino.upload.maximum_size=63488
-gnusbuino.upload.speed=38400
-gnusbuino.upload.disable_flushing=true
+gnusbuino88.name=Gnusbuino88
+gnusbuino88.upload.protocol=usbasp
+gnusbuino88.upload.maximum_size=6144
+gnusbuino88.upload.speed=38400
+gnusbuino88.upload.disable_flushing=true
 
-gnusbuino.bootloader.low_fuses=0xF7
-gnusbuino.bootloader.high_fuses=0xDC
-gnusbuino.bootloader.extended_fuses=0xFC
-gnusbuino.bootloader.path= atmega644p
-gnusbuino.bootloader.file=Atmega644p_20Mhz.hex
-gnusbuino.bootloader.unlock_bits=0x3F
-gnusbuino.bootloader.lock_bits=0x0F
-gnusbuino.build.mcu=atmega644p
-gnusbuino.build.f_cpu=20000000L
-gnusbuino.build.core=arduino
-gnusbuino.build.variant=atmega644
-
+gnusbuino88.bootloader.low_fuses=0xef
+gnusbuino88.bootloader.high_fuses=0xdd
+gnusbuino88.bootloader.extended_fuses=0xf8
+gnusbuino88.bootloader.path= atmega88
+gnusbuino88.bootloader.file= atmega88_12Mhz.hex
+gnusbuino88.bootloader.unlock_bits=0x3F
+gnusbuino88.bootloader.lock_bits=0x0F
+gnusbuino88.build.mcu= atmega88
+gnusbuino88.build.f_cpu=12000000L
+gnusbuino88.build.core=arduino
+gnusbuino88.build.variant= atmega88
 
 ##############################################################
 
-midignusb.name=MIDIgnusbuino
-midignusb.upload.protocol=usbasp
-midignusb.upload.maximum_size=63488
-midignusb.upload.speed=38400
-midignusb.upload.disable_flushing=true
+gnusbuino88bb.name=gnusbuino88bb
+gnusbuino88bb.upload.protocol=usbasp
+gnusbuino88bb.upload.maximum_size=8096
+gnusbuino88bb.upload.speed=38400
+gnusbuino88bb.upload.disable_flushing=true
 
-midignusb.bootloader.low_fuses=0xF7
-midignusb.bootloader.high_fuses=0xDC
-midignusb.bootloader.extended_fuses=0xFC
-midignusb.bootloader.path= atmega644p
-midignusb.bootloader.file=Atmega644p_20Mhz.hex
-midignusb.bootloader.unlock_bits=0x3F
-midignusb.bootloader.lock_bits=0x0F
-midignusb.build.mcu=atmega644p
-midignusb.build.f_cpu=20000000L
-midignusb.build.core=midignusbuino
-midignusb.build.variant=atmega644p
+gnusbuino88bb.bootloader.low_fuses=0xef
+gnusbuino88bb.bootloader.high_fuses=0xdd
+gnusbuino88bb.bootloader.extended_fuses=0xf8
+gnusbuino88bb.bootloader.path= atmega88
+gnusbuino88bb.bootloader.file= atmega88_12Mhz.hex
+gnusbuino88bb.bootloader.unlock_bits=0x3F
+gnusbuino88bb.bootloader.lock_bits=0x0F
+gnusbuino88bb.build.mcu= atmega88
+gnusbuino88bb.build.f_cpu=8000000L
+gnusbuino88bb.build.core=arduino
+gnusbuino88bb.build.variant= atmega88
+
+##############################################################
+
+MIDIgnusbuino88.name=MIDIgnusbuino88
+MIDIgnusbuino88.upload.protocol=usbasp
+MIDIgnusbuino88.upload.maximum_size=6144
+MIDIgnusbuino88.upload.speed=38400
+MIDIgnusbuino88.upload.disable_flushing=true
+
+MIDIgnusbuino88.bootloader.low_fuses=0xef
+MIDIgnusbuino88.bootloader.high_fuses=0xdd
+MIDIgnusbuino88.bootloader.extended_fuses=0xf8
+MIDIgnusbuino88.bootloader.path= atmega88
+MIDIgnusbuino88.bootloader.file= atmega88_12Mhz.hex
+MIDIgnusbuino88.bootloader.unlock_bits=0x3F
+MIDIgnusbuino88.bootloader.lock_bits=0x0F
+MIDIgnusbuino88.build.mcu= atmega88
+MIDIgnusbuino88.build.f_cpu=12000000L
+MIDIgnusbuino88.build.core= midignusbuino
+MIDIgnusbuino88.build.variant= atmega88
 
 

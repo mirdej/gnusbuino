@@ -223,17 +223,12 @@ int main(void)
 	MCUCSR = (1 << PORF);			// set power on reset flag just to be sure
 
 	init();
-	adInit();
+	//adInit();
 
 	wdt_enable(WDTO_1S);	// enable watchdog timer
 	
-#if defined(__AVR_ATtiny85__)
-	DDRB = 1; 	//PB0 is output
-#else
-	// set PORT D Directions -> 1110 0000, output 0 on unconnected PD7
-	DDRD = 0xe0; 	// 1110 0000 -> set PD0..PD4 to inputs -> USB pins
-	PORTD = 0x70; 	// set Pullup for Bootloader Jumper, no pullups on USB pins -> 0111 0000
-#endif
+	DDRD = (1 << 5) | (1 << 6); 	// LEDS = output
+
 
 	unsigned char   i = 0;
 
