@@ -16,7 +16,7 @@ gnusbuino.bootloader.lock_bits=0x0F
 gnusbuino.build.mcu=atmega644p
 gnusbuino.build.f_cpu=20000000L
 gnusbuino.build.core=arduino
-gnusbuino.build.variant=atmega644
+gnusbuino.build.variant=atmega644p
 
 
 ##############################################################
