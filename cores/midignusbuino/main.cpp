@@ -180,8 +180,6 @@ void doPeriodical(void) {
 		
 		usbPoll();
 		MIDI.sendMIDI();        
-
-
 		wdt_reset();
 }		
 

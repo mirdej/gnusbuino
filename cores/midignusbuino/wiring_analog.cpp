@@ -54,7 +54,8 @@ int analogRead(uint8_t pin)
 /*	if (!ad_initialized) {
 		adInit();
 	}*/
- 	ADMUX = (ADMUX & ~ADC_MUX_MASK) | (pin & ADC_MUX_MASK);		// set channel (from midi_gnusb.c)
+// 	ADMUX = (ADMUX & ~ADC_MUX_MASK) | (pin & ADC_MUX_MASK);		// set channel (from midi_gnusb.c)
+	ADMUX = (analog_reference << 6) | (pin & 0x07);
 
 	// start the conversion
 	ADCSRA |= (1 << ADIF);			// clear hardware "conversion complete" flag 
